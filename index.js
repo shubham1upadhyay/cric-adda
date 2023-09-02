@@ -65,20 +65,28 @@
         if(d.ms === "live" && d.status !== "Match not started")
         {
             live_item.innerHTML =  `
-        
-        <div class="match-item live-match-item">
-        <div class="name-stats">
-        <img src="${d.t1img}" alt="team-1">
-        <h3>${d.t1}</h3>
-        
-        <img src="${d.t2img}" alt="team-2"> 
-        <h3>${d.t2}</h3>
+        <div class="card mx-5">
+   <div class="card-body">
+   
+   <div class="d-flex>
+   
+   <div>
+   <img src="${d.t1img}" class="card-img-top" alt="...">
+    <h5 class="card-title">${d.t1}</h5>
+  </div>
 
-        <h4 class="type">${d.matchType}</h4>
-        </div>
-        <p class="status">${d.status}</p>
-        <i class="time">${d.dateTimeGMT}</i>
-        <div>
+  <div>
+   <img src="${d.t2img}" class="card-img-top" alt="...">
+    <h5 class="card-title">${d.t2}</h5>
+  </div>
+
+    </div>
+
+    <p class="card-text">${d.matchType}</p>
+    <a href="#" class="btn btn-primary">${d.status}</a>
+  </div>
+</div>
+
         `; 
         }
 
@@ -90,7 +98,19 @@
     }
     
   })
+{/* <div class="match-item live-match-item">
+        <div class="name-stats">
+        <img src="${d.t1img}" alt="team-1">
+        <h3>${d.t1}</h3>
+        
+        <img src="${d.t2img}" alt="team-2"> 
+        <h3>${d.t2}</h3>
 
+        <h4 class="type">${d.matchType}</h4>
+        </div>
+        <p class="status">${d.status}</p>
+        <i class="time">${d.dateTimeGMT}</i>
+        <div></div> */}
 
   let endpoint1 = `https://newsapi.org/v2/top-headlines?country=us&apiKey=b605c34945f44a138b3e3b59ae732910`;
 

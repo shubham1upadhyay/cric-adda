@@ -1,0 +1,8 @@
+.form-control:focus {
+    border-color: none !important;
+    box-shadow: none !important;
+}
+.form-select:focus {
+    border-color: none !important;
+    box-shadow: none !important;
+}

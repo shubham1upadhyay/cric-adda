@@ -14,6 +14,7 @@
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/3a3c63e6ee.js"
@@ -21,63 +22,64 @@
     ></script>
   </head>
   <body>
-    <!-- navbar start here -->
 
-    <nav>
-      <div class="parent">
-        <div class="child-1">
-          <button title="menu" class="menu" type="button">
-            <i class="fa fa-bars"></i>
-          </button>
-        </div>
-
-        <div class="child-2">
-          <div class="brand-logo">
-            <a href="#">
+    <nav class="navbar navbar-expand-lg p-0">
+      <div class="container-fluid mx-5 p-0">
+          <a href="#">
               <img
+              class="p-0"
+              width="100"
                 src="https://khelnow.com/images/khelNowLogo.svg?imwidth=256"
                 alt="brand-logo"
+                id="home"
               />
             </a>
-          </div>
-        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white mx-4 fw-bolder"  aria-current="page" href="#" id="about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bolder mx-2" href="#" id="contact">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white mx-2 fw-bolder">Football</a>
+            </li>
 
-        <div class="child-3">
-          <button type="button" title="search">
-            <i class="fa fa-search"></i>
-          </button>
-          <button id="home" type="button">Home</button>
-          <button id="about" type="button">About</button>
-          <button id="contact" type="button">Contact Us</button>
-          <button id="more" type="button">More</button>
-          <button type="button" id="register" class="login-btn">
-            Register
-          </button>
-          <button id="share" type="button">Share</button>
+            <li class="nav-item">
+              <a class="nav-link text-white mx-2 fw-bolder">Cricket</a>
+            </li>
+          </ul>
+          <button type="button" id="register" class="btn fw-bolder btn-success">Register Here !</button>
         </div>
-
-        <div></div>
-        <div></div>
       </div>
     </nav>
+
+
+    
+
 
     <section class="parent-1">
       <div class="form login">
         <div class="form-content">
           <header>Login</header>
           <form action="#">
+            <p id="e-msg"></p>
             <div class="field input-field">
-              <input type="email" placeholder="Email" class="input" />
+              <input type="email" id="email" placeholder="Email" class="input" />
             </div>
             <div class="field input-field">
-              <input type="password" placeholder="Password" class="password" />
+              <input type="password" id="pass" placeholder="Password" class="password" />
               <i class="bx bx-hide eye-icon"></i>
             </div>
             <div class="form-link">
               <a href="#" class="forgot-pass">Forgot password?</a>
             </div>
             <div class="field button-field">
-              <button type="button">Login</button>
+              <button id="let_me_in" type="button">Login</button>
             </div>
           </form>
           <div class="form-link">
@@ -109,4 +111,5 @@
     </div>
   </body>
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </html>

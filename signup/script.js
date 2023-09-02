@@ -49,9 +49,39 @@ about.addEventListener('click', ()=>{
 contact.addEventListener('click', ()=>{
     alert("Under Construction, Will be updated soon !");
 })
-more.addEventListener('click', ()=>{
-    alert("Under Construction, Will be updated soon !");
-})
-share.addEventListener('click', ()=>{
-    alert("Under Construction, Will be updated soon !");
+
+let fName = document.getElementById("name");
+let email = document.getElementById("email");
+let pass = document.getElementById("pass");
+let cnf_pass = document.getElementById("cnf_pass");
+let signup = document.getElementById("signup");
+let eMsg = document.getElementById("e_msg");
+
+
+signup.addEventListener('click', ()=>{
+let nameV = fName.value.trim();
+let emailV = email.value.trim();
+let passV = pass.value.trim();
+let cnf_passV = cnf_pass.value.trim();
+
+  if(!nameV ||  !emailV || !passV || !cnf_passV)
+  {
+    eMsg.innerText = "All Fields are Mandatory !"
+  }
+  else if (passV !== cnf_passV)
+  {
+    eMsg.innerText = 'Confirm Password Not Matching !'
+  }
+  else{
+    eMsg.innerText = '';
+    nameV.innerHTML = '';
+    passV.innerHTML='';
+    cnf_passV.innerHTML = '';
+    location.href ='/login';
+  }
+  localStorage.setItem('name', nameV);
+  localStorage.setItem('email', emailV);
+  localStorage.setItem('pass', passV);
+  sessionStorage.setItem('email', emailV);
+  sessionStorage.setItem('pass', passV);
 })
