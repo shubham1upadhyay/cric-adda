@@ -21,22 +21,26 @@ body {
 }
 .banner{
     width: 95%;
-    margin-top: 100px;
+    margin-top: 20px;
 }
 .banner video{
     width: 100%;
 }
 
 .score-board{
-    width: 90%;
-    height: 230px;
+    width: 95%;
+    /* height: 230px; */
     margin-top: 20px;
     /* background-color: white; */
-    padding: 0px 20px;
-    border-radius: 40px 10px 20px;
+    /* padding: 0px 20px;
+    border-radius: 40px 10px 20px; */
     display: flex;
-    overflow-y: scroll;
-    /* overflow-x: hidden; */
+    /* overflow-y: scroll;*/
+    overflow-x: scroll; 
+}
+.live-img img{
+    width: 100px;
+
 }
 .score-board-child-1{
     width: 100%;
@@ -114,7 +118,7 @@ a{
 }
 
 main{
-    margin-left: 10%;
+    margin-left: 3%;
 }
 .match-data{
     width: 100%;
@@ -242,7 +246,15 @@ main{
 
 
 
-
+@media screen and (max-width:768px) {
+    .score-board{
+        display: block;
+        margin: 0px;
+    }
+    main{
+        margin: 0px;
+    }
+}
 
 
 

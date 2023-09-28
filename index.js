@@ -65,23 +65,14 @@
         if(d.ms === "live" && d.status !== "Match not started")
         {
             live_item.innerHTML =  `
-        <div class="card mx-5">
-   <div class="card-body">
-   
-   <div class="d-flex>
-   
-   <div>
-   <img src="${d.t1img}" class="card-img-top" alt="...">
-    <h5 class="card-title">${d.t1}</h5>
-  </div>
 
-  <div>
-   <img src="${d.t2img}" class="card-img-top" alt="...">
-    <h5 class="card-title">${d.t2}</h5>
-  </div>
-
-    </div>
-
+            <div class="card mx-2 my-4" style="width: 18rem;">
+            <div class="live-img">
+            <img src="${d.t1img}" class="card-img-top mx-2" alt="...">
+            <img src="${d.t2img}" style="margin-left:50px" class="card-img-top" alt="...">
+            </div>
+  <div class="card-body">
+    <h5 class="card-title">${d.t1} vs ${d.t2}</h5>
     <p class="card-text">${d.matchType}</p>
     <a href="#" class="btn btn-primary">${d.status}</a>
   </div>
