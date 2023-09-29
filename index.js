@@ -66,7 +66,7 @@
         {
             live_item.innerHTML =  `
 
-            <div class="card mx-2 my-4" style="width:300px">
+            <div class="card myCard mx-2 my-4" style="width:300px">
             <div class="live-img">
             <img src="${d.t1img}" class="card-img-top mx-2" alt="...">
             <img src="${d.t2img}" style="margin-left:70px" class="card-img-top" alt="...">
@@ -104,12 +104,16 @@
       console.log(news_d)
         let newsItem = document.createElement("div");
         newsItem.innerHTML =  `
+
+        
+
+
          <div class="news-item">
          <marquee direction="left" height="100px">
             ${news_d.title}</marquee>
             </div>
         `; 
-        // newsContainer.appendChild(newsItem);
+        newsContainer.appendChild(newsItem);
     }
   })
 
