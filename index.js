@@ -66,10 +66,10 @@
         {
             live_item.innerHTML =  `
 
-            <div class="card mx-2 my-4" style="width: 18rem;">
+            <div class="card mx-2 my-4" style="width:300px">
             <div class="live-img">
             <img src="${d.t1img}" class="card-img-top mx-2" alt="...">
-            <img src="${d.t2img}" style="margin-left:50px" class="card-img-top" alt="...">
+            <img src="${d.t2img}" style="margin-left:70px" class="card-img-top" alt="...">
             </div>
   <div class="card-body">
     <h5 class="card-title">${d.t1} vs ${d.t2}</h5>
@@ -80,28 +80,12 @@
 
         `; 
         }
-
-
-
-        container.appendChild(item);
-        r_container.appendChild(r_item);
+        // container.appendChild(item);
+        // r_container.appendChild(r_item);
         live_container.appendChild(live_item);
     }
     
   })
-{/* <div class="match-item live-match-item">
-        <div class="name-stats">
-        <img src="${d.t1img}" alt="team-1">
-        <h3>${d.t1}</h3>
-        
-        <img src="${d.t2img}" alt="team-2"> 
-        <h3>${d.t2}</h3>
-
-        <h4 class="type">${d.matchType}</h4>
-        </div>
-        <p class="status">${d.status}</p>
-        <i class="time">${d.dateTimeGMT}</i>
-        <div></div> */}
 
   let endpoint1 = `https://newsapi.org/v2/top-headlines?country=us&apiKey=b605c34945f44a138b3e3b59ae732910`;
 
@@ -125,7 +109,7 @@
             ${news_d.title}</marquee>
             </div>
         `; 
-        newsContainer.appendChild(newsItem);
+        // newsContainer.appendChild(newsItem);
     }
   })
 
